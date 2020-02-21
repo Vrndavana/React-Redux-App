@@ -8,14 +8,20 @@ const Chucknorris = (props) => {
     return(
         <div className="joke-container">
 
-            {/* <img src={logo} alt="chucknorris"/> */}
+            <img src={logo} alt="chucknorris"/>
 
             <div className="getyourjoke">
 
                 <h2 className='getjoke'> Get your Joke! </h2>
-                {props.isLoading && (
 
-                    <Loader type='Puff' color="red" height={100} width={100} timeout={3000}/>
+                {props.isLoading && (
+                        <Loader 
+                        type='Puff' 
+                        color="red" 
+                        height={100} 
+                        width={100} 
+                        timeout={3000}
+                        />
                 )}
                 <button className="button" onClick={props.fetchChucknorris}> <b>Get joke</b> </button>
 
