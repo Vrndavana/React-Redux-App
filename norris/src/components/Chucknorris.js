@@ -1,6 +1,6 @@
 import React from "react";
 import {connect} from 'react-redux';
-import Loader from 'react-loader-snipper';
+import Loader from 'react-loader-spinner';
 import logo from '../images/chucknorris.jpg';
 import {fetchChucknorris} from '../actions';
 

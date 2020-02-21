@@ -18,6 +18,7 @@ export const reducer = (state = initialState, action) => {
         return{
             ...state,
             isLoading:false,
+            chuckNorris:action.payload
         }
 
         default: return state;
